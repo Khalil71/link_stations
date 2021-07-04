@@ -47,7 +47,7 @@ function getBestStation(point) {
       return station;
     })
     .filter((station) => station[2] > 0)
-    .sort((station1, station2) => station2[2] - station1[2])[0]; //return only the link station with the best connection
+    .sort((station1, station2) => station2[2] - station1[2])[0]; //return only the link station with the greatest power
 
   return {
     point,
