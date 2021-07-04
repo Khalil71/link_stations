@@ -15,15 +15,15 @@ const points = [
 points.map(getBestStation).map((result) => {
   if (result.bestStation) {
     console.log(
-      `Best link station for point [${result.point[0]},${
+      `Best link station for point (${result.point[0]},${
         result.point[1]
-      }] is [${
+      }) is (${
         result.bestStation[0]
-      }] with power: ${result.bestStation[2].toFixed(2)}`
+      }) with power: ${result.bestStation[2].toFixed(2)}`
     );
   } else {
     console.log(
-      `No link station within reach for point [${result.point[0]},${result.point[1]}]`
+      `No link station within reach for point (${result.point[0]},${result.point[1]})`
     );
   }
 });
